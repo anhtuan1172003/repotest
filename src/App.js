@@ -1,9 +1,8 @@
 import { Row, Col, Image, Carousel } from "react-bootstrap";
 import Header from './components/Header';
-import Footer from './components/Footer';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Blog from "./components/Blog";
-import MainContent from "./components/MainContent";
+
 import './style/App.css';
 
 
@@ -75,7 +74,6 @@ function Home() {
         </Col>
       </Row>
       <Row>
-        <MainContent/>
       </Row>
     </div>
   );
@@ -88,9 +86,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
-        <Route path="/blog" element={<Blog/>} />
       </Routes>
-      <Footer/>
+
     </BrowserRouter>
   );
 }
